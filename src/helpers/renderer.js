@@ -10,15 +10,13 @@ export default (props) => {
       <Routes></Routes>
     </StaticRouter>
   );
-  return `
-        <html> 
+  return `<html> 
             <head></head>
             <body>
                 <div id="root"> 
                     ${content}
                 </div>
             </body>
-            <script src="bundle.js"></script>
-        </html>
-    `;
+            <script src="bundle.js"}></script>
+        </html>`;
 };
