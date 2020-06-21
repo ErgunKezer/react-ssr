@@ -8,7 +8,8 @@ yarn run serve
 
 npm run dev
 
-#c reate build(server) bundle.js
+# create build(server) bundle.js
+
 npm run dev:build:server
 
 # create public(client) bundle.js
