@@ -1,16 +1,20 @@
 # react-ssr
 
-#nodemon
+# nodemon
+
 yarn run serve
 
-#run all
+# run all
+
 npm run dev
 
-#create build(server) bundle.js
+#c reate build(server) bundle.js
 npm run dev:build:server
 
-#create public(client) bundle.js
+# create public(client) bundle.js
+
 npm run dev:build:client
 
-#up Server
+# up Server
+
 npm run dev:server
