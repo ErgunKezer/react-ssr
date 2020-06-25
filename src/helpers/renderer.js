@@ -4,7 +4,6 @@ import Home from '../client/components/Home';
 import Routes from '../client/Routes';
 import { StaticRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-
 export default (req, store) => {
   const content = renderToString(
     <Provider store={store}>
@@ -14,7 +13,9 @@ export default (req, store) => {
     </Provider>
   );
   return `<html> 
-            <head></head>
+            <head>
+              <link rel="stylesheet" type="text/css" href="main.css">
+            </head>
             <body>
                 <div id="root">${content}</div>
             </body>

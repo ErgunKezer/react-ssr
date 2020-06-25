@@ -19,4 +19,3 @@ ReactDom.hydrate(
   </Provider>,
   document.querySelector('#root')
 );
-// console.log('Hi there');
