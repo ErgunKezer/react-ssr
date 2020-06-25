@@ -16,10 +16,8 @@ export default (req, store) => {
   return `<html> 
             <head></head>
             <body>
-                <div id="root"> 
-                    ${content}
-                </div>
+                <div id="root">${content}</div>
             </body>
-            <script src="bundle.js"}></script>
+            <script src="bundle.js"></script>
         </html>`;
 };
