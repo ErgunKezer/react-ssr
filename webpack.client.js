@@ -10,6 +10,14 @@ const config = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
   },
+  module: {
+    rules: [
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: ['ignore-loader'],
+      },
+    ],
+  },
 };
 
 module.exports = merge(baseConfig, config);

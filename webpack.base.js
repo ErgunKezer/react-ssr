@@ -1,8 +1,5 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   // Tell webpack to run babel on every file it runs through
-  plugins: [new MiniCssExtractPlugin()],
-
   module: {
     rules: [
       {
@@ -23,10 +20,6 @@ module.exports = {
             ],
           ],
         },
-      },
-      {
-        test: /\.(sa|sc|c)ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },

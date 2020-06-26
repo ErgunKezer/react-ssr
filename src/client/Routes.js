@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Home from './components/Home';
-import Users from './components/Users';
+import Home from './pages/Home';
+import Users from './pages/Users';
 
 const Routes = () => {
   return (

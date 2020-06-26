@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchUsers } from '../actions';
-import './users.scss';
 const Users = (props) => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -24,9 +23,6 @@ const Users = (props) => {
     <div>
       <p className='test'>Users</p>
       {users}
-      <div className='alert alert-primary' role='alert'>
-        A simple primary alert—check it out!
-      </div>
     </div>
   );
 };

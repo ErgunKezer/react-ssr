@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './Routes';
+import Layout from './Layouts/Layout';
 
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
@@ -14,7 +15,7 @@ const store = createStore(reducers, {}, applyMiddleware(thunk));
 ReactDom.hydrate(
   <Provider store={store}>
     <BrowserRouter>
-      <Routes></Routes>
+      <Layout></Layout>
     </BrowserRouter>
   </Provider>,
   document.querySelector('#root')
