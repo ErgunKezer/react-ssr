@@ -4,6 +4,7 @@ import Routes from '../client/Routes';
 import { StaticRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Layout from '../client/Layouts/Layout';
+import { Helmet } from 'react-helmet';
 export default (req, store) => {
   const content = renderToString(
     <Provider store={store}>
@@ -12,8 +13,11 @@ export default (req, store) => {
       </StaticRouter>
     </Provider>
   );
+  const helmet = Helmet.renderStatic();
   return `<html> 
             <head>
+            ${helmet.title.toString()}
+            ${helmet.meta.toString()}
               <link rel="stylesheet" type="text/css" href="build/main.css">
             </head>
             <body>

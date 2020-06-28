@@ -2,11 +2,12 @@ import React from 'react';
 import '../../../assets/scss/main.scss';
 import Navbar from '../components/Navbar';
 import Routes from '../Routes';
+import { renderRoutes } from 'react-router-config';
 const Layout = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <Routes></Routes>
+      <div>{renderRoutes(Routes)}</div>
     </div>
   );
 };
